@@ -1,0 +1,82 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Document</title>-->
+<!--    <link rel="stylesheet" href="css/main.css">-->
+
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="container">-->
+<!--    <button class="balloon" onclick="grow()"> </button>-->
+<!--    </div>-->
+
+<!--&lt;!&ndash;<div class="balloon">Click Me!</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<button class="text">&ndash;&gt;-->
+<!--&lt;!&ndash;    <p>grow bitch grow</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</button>&ndash;&gt;-->
+<!--    <script src="js/main.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jiggle Into JavaScript</title>
+
+    <style>
+        body  {margin:25px}
+        #resetDiv {height:150px;width:150px; background-color:orange;}
+
+        #blueDiv {height:150px;width:150px; background-color:blue;}
+
+        #fadeDiv {width:150px;height:150px;background-color:orange;opacity:0.75;}
+
+        #growDiv {height:150%;width:150%;background-color:orange}
+
+    </style>
+
+</head>
+<body>
+
+<button onclick="grow()">
+    Grow
+</button>
+
+
+<button onclick="blue()">
+    Blue
+</button>
+
+
+<button onclick="fade()">
+    Fade
+</button>
+
+<button onclick="reset()">
+    Reset
+</button>
+
+
+
+<div id="blueDiv">
+</div>
+<script>
+    var div = document.getElementById("blueDiv");
+
+    function blue() {
+        div.setAttribute("id", "blueDiv");}
+
+    function reset() {
+        div.setAttribute("id", "resetDiv");}
+
+    function fade() {
+        div.setAttribute("id", "fadeDiv");}
+    function grow() {
+        div.setAttribute("id", "growDiv")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/*body{*/
+/*    width = 100%;*/
+/*}*/
+
+/*.container{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*button{*/
+/*    border-radius: 50%;*/
+/*    width: 10em;*/
+/*    height: 10em;*/
+/*    background-color: darkred;*/
+/*    border-top-color: black;*/
+/*    border-top-width: 4px;*/
+/*    border-bottom-width: 1px;*/
+/*}*/
+
+/*.container{*/
+/*    display: flex;*/
+/*}*/
+
+/*.balloon{*/
+
+/*background-color: darkred;*/
+/*height: 100px;*/
+/*width: 100px;*/
+/*border-radius: 50%;*/
+/*position: relative;*/
+/*display: flex;*/
+/*justify-content: center;*/
+/*align-items:center;*/
+/*    margin-left: 250px;*/
+/*    margin-top: 75px;*/
+/*}*/
+
+/*button{*/
+/*    display: block;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.grow {
+    transform: scale(1.5);
+}
