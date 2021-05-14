@@ -52,9 +52,8 @@ balloon.addEventListener("click", function (e) {
     if(count > maxClick[level -1]){
         points = 0
     }
-    // else if(count = maxClick[level - 1]{
-    //     points += 0 //find a way for the points to stop increasing once burst
-    // }
+    //find a way for the points to stop increasing once burst
+
     document.querySelector("#points").textContent = points
 })
 
@@ -85,10 +84,6 @@ document.querySelector('#collect').addEventListener('click', function(e){
         let sum = arr.reduce(function(a,b){
             return a + b;
 
-            // document.querySelector("#points").textContent = 0;
-
-            // points -= b;
-            // alert("'Meowth coins collected")
         })
         document.getElementById("walletAmount").innerText = sum
         points = 0
@@ -99,19 +94,6 @@ document.querySelector('#collect').addEventListener('click', function(e){
         }
     }
 
-    // if()
-
-    // scale = 1;
-    // balloon.style.transform = "scale("+scale+")";
-    // balloon.style.width = "126px";
-    // console.log(balloon);
 })
 
 
-// balloon.style.height = "50px";
-// balloon.style.width = "50px"; // revert balloon back to shape after press collect moolah
-
-
-//reset to regular size
-
-//when lose, dont collect money to wallet

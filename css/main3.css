@@ -3,7 +3,6 @@
 }
 
 body{
-    /*background: url('../images/pokemonBackgroun.gif');*/
     width: 100%;
     height: 100%;
     margin: 0;
@@ -13,13 +12,9 @@ body{
 #startPage{
     background: url("../images/startscreen.gif");
     background-size: 500px 250px;
-    /*background-position-y: 5px;*/
-    /*height: 338px;*/
-    /*width: 600px;*/
     width: 500px;
     height: 250px;
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -65,7 +60,6 @@ body{
     z-index: 0;
 }
 #startGame{
-    /*background: url('../images/pokemonBackgroun.gif');*/
     width: 500px;
     height: 250px;
     position: relative;
@@ -94,7 +88,6 @@ body{
 
 .moneyCount{
     display: flex;
-    /*flex-direction: row;*/
     background-color: #272828;
     color: red;
     width: fit-content;
@@ -154,10 +147,6 @@ body{
 }
 
 #balloon{
-    /*width: 50%;*/
-    /*height: 50%;*/
-    /*background-image: url("../images/koffing.png");*/
-    /*border-radius: 50%;*/
     margin: 5px;
     color: red;
     transition: all 0.8s ease-in-out;
@@ -167,9 +156,6 @@ body{
     0%, 100% {
         transform: rotate(0);
     }
-    /*25% {*/
-    /*    transform: rotate(90deg);*/
-    /*}*/
     75% {
         transform: rotate(180deg);
     }
@@ -181,7 +167,6 @@ body{
 
 #balloon:hover{
     transform: scale(1.03);
-    /*background-image: url("../images/koffings.jpeg");*/
 }
 
 #balloon p{
@@ -197,7 +182,6 @@ img {
     height: 50%;
 }
 #collect{
-    /*margin-right: auto;*/
     width: 100px;
     height: 20px;
     font-size: 10px;
@@ -229,11 +213,6 @@ img {
 #lose.visible {
     display: inline-flex;
     font-size: 40px;
-    /*position: absolute;*/
-    /*z-index: 999;*/
-    /*left: 10px;*/
-    /*top: 46px;*/
-    /*animation: dance 2s linear;*/
 }
 
 .rules{
@@ -245,7 +224,6 @@ img {
     border-radius: 5px;
     width: 120px;
     height: 220px;
-    /*background: url("../images/teamRocket.gif");*/
     background-color: black;
 }
 
@@ -286,6 +264,3 @@ img {
 
 
 }
-/*#lose:hover {*/
-/*    transform: scale(1.0);*/
-/*}*/
