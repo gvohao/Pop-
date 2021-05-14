@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<audio id='sound' src="images/sound1.mp3" loop="loop"></audio>
+
+<div id="startGame">
+    <div id="bg"></div>
+
+    <!--rules-->
+    <div class="rules">
+        <img src="images/teamRocket.gif">
+        <div id="ruleHead">Rules:</div>
+        <div id="rulePara">Click on Koffings to collect money BUT be careful,
+            he might explode if grown too big!</div>
+
+
+        <div id="rulePara2">Click <strong>"Collect Payday $"</strong> to lock in your earnings before Koffing
+            explodes <strike>and avoid humiliation</strike> and move on to pump the next Koffing.</div>
+
+    </div>
+
+<!--    count number of balloons pumped-->
+    <div class= "balloonCount">
+        <div>Koffings: </div><div id="level"></div><div id="maxBalloon">/30</div>
+        <audio id='haha' src="images/haha.mp3" loop="loop"></audio>
+    </div>
+
+<!--    count amount earned-->
+    <div class="moneyCount">
+        <div>$    </div>
+        <div id="points"></div>
+    </div>
+
+    <div class="wallet">
+        <div id="walletDisplay">Wallet: <div id="walletAmount">0</div></div>
+        <audio id='coins' src="images/coins.mp3"></audio>
+    </div>
+
+<!--    balloon and collect button-->
+    <div class="mainContainer">
+        <div id="balloon"><img src="images/koffings.jpeg"></div>
+        <button id="collect">Collect Payday $</button>
+    </div>
+
+
+</div>
+
+<!--start screen-->
+<div id="startPage">
+<!--    <div id="title">Koffing's Kombustion</div>-->
+    <button id="pressStart">Start Game</button>
+</div>
+
+<div id="lose">
+    <img src="images/simp.jpg">
+</div>
+
+
+<script src="js/main3.js"></script>
+</body>
+</html>

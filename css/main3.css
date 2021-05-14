@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    /*background: url('../images/pokemonBackgroun.gif');*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#startPage{
+    background: url("../images/startscreen.gif");
+    background-size: 500px 250px;
+    /*background-position-y: 5px;*/
+    /*height: 338px;*/
+    /*width: 600px;*/
+    width: 500px;
+    height: 250px;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*#title{*/
+/*    font-family: 'Lato', sans-serif;*/
+/*    color: darkred;*/
+/*    font-weight: bolder;*/
+/*    text-decoration: black;*/
+/*    margin-bottom: 20px;*/
+/*    background-color: #272828;*/
+/*    border-radius: 5px;*/
+/*    border: 2px darkred solid;*/
+/*    padding: 5px;*/
+/*    text-transform: capitalize;*/
+/*}*/
+
+#pressStart{
+    color: mediumpurple;
+    background-color: purple;
+    border-radius: 5px;
+    border: 0.8px mediumpurple solid;
+    width: 80px;
+    height: 35px;
+    font-family: 'Lato', sans-serif;
+}
+
+#pressStart:hover{
+    background-color: darkgreen;
+    color: greenyellow;
+    border: 1px greenyellow solid;
+    transform: scale(1.1);
+}
+
+#bg{
+    background: url('../images/pokemonBackgroun.gif');
+    width: 500px;
+    height: 250px;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+#startGame{
+    /*background: url('../images/pokemonBackgroun.gif');*/
+    width: 500px;
+    height: 250px;
+    position: relative;
+}
+
+.balloonCount{
+    display: flex;
+    width: fit-content;
+    border: 1px red solid;
+    padding: 5px;
+    background-color: #272828;
+    color: red;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 999;
+    left: 10px;
+    top: 10px;
+}
+
+#maxBalloon{
+    margin-left: 1.5px;
+}
+#level{
+    margin-left: 5px;
+}
+
+.moneyCount{
+    display: flex;
+    /*flex-direction: row;*/
+    background-color: #272828;
+    color: red;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid red;
+    position: absolute;
+    z-index: 999;
+    top: 45px;
+    left: 10px;
+    padding: 2px;
+}
+
+#points{
+    margin-top: 0px;
+}
+
+.wallet{
+    background-color: #272828;
+    color: red;
+    position: absolute;
+    z-index: 999;
+    top: 150px;
+    left: 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+#walletAmount{
+    background-color: goldenrod;
+    color: black;
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: 13px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#walletAmount:hover{
+    transform: scale(1.3);
+    color: black;
+}
+.mainContainer{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    /*overflow: hidden;*/
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 999;
+    left: 175px;
+    top: 40px;
+}
+
+#balloon{
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*background-image: url("../images/koffing.png");*/
+    /*border-radius: 50%;*/
+    margin: 5px;
+    color: red;
+    transition: all 0.8s ease-in-out;
+}
+
+@keyframes dance {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    /*25% {*/
+    /*    transform: rotate(90deg);*/
+    /*}*/
+    75% {
+        transform: rotate(180deg);
+    }
+}
+
+.explode{
+    animation: dance 2s infinite;
+}
+
+#balloon:hover{
+    transform: scale(1.03);
+    /*background-image: url("../images/koffings.jpeg");*/
+}
+
+#balloon p{
+    background-color: #272828;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+#collect{
+    /*margin-right: auto;*/
+    width: 100px;
+    height: 20px;
+    font-size: 10px;
+    color: darkred;
+    border-radius: 5px;
+    border: 1px goldenrod solid;
+    background-color: gold;
+    position: absolute;
+    top: 150px;
+    left: 17px;
+}
+
+#collect:hover{
+    background-color: darkgreen;
+    color: greenyellow;
+    border: 1px greenyellow solid;
+    transform: scale(1.3);
+}
+
+#lose {
+    display: none;
+    font-size: 40px;
+    position: absolute;
+    z-index: 999;
+    left: 50px;
+    top: 46px;
+}
+
+#lose.visible {
+    display: inline-flex;
+    font-size: 40px;
+    /*position: absolute;*/
+    /*z-index: 999;*/
+    /*left: 10px;*/
+    /*top: 46px;*/
+    /*animation: dance 2s linear;*/
+}
+
+.rules{
+    position: absolute;
+    z-index: 998;
+    left: 350px;
+    top: 20px;
+    border: 1px red solid;
+    border-radius: 5px;
+    width: 120px;
+    height: 220px;
+    /*background: url("../images/teamRocket.gif");*/
+    background-color: black;
+}
+
+.rules img{
+    object-fit: contain;
+    position: absolute;
+    height: 60px;
+    margin-top:10px;
+    opacity: 0.3;
+    top: 60px;
+    left: 25px;
+}
+#ruleHead{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 25px;
+}
+#rulePara {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 25px;
+    left: 2px;
+    right: 2px;
+    font-style: italic;
+
+}
+
+#rulePara2 {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 100px;
+    left: 2px;
+    right: 2px;
+    font-style: italic;
+
+
+}
+/*#lose:hover {*/
+/*    transform: scale(1.0);*/
+/*}*/
